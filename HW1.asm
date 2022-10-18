@@ -1,23 +1,23 @@
-include Irvine32.inc
+include lrvine32.inc
 
-.data
+.data 
 Digit0 BYTE 2
 Digit1 BYTE 5
 Digit2 BYTE 5
-Digit3 BYTE 7
+Digit3 BYTE 8
 MyID DWORD ?
-.code 
+
+.code
 Main PROC
-	
-	mov ah, Digit0
-	mov al, Digit1
+
+	mov ah,Digit0
+	mov al,Digit1
 	sh1 eax, 16
 	mov ah, Digit2
 	mov al, Digit3
 	mov MyID, eax
 
-	exit
+exit
 
 main ENDP
 END main
-
